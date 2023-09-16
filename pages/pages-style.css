@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 25px;
+    width: 100wv;
+    height: 100hv;
+    background-color: #0C356A;
+    color: #D5FFD0;
+}
+
+h1 {
+    font-size: 10vb;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    top: 50%;
+    font-size: 6vb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+input {
+    font-size: 20px;
+    border: 2px solid #D5FFD0;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+label {
+    font-size: 4vb;
+}
+
+.form-file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 40px;
+    background: #D5FFD0;
+    color: #0C356A;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-file__input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.form-checkbox {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox > input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.form-checkbox__box {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #D5FFD0;
+    margin-right: 6px;
+}
+
+.form-checkbox > input:checked + .form-checkbox__box {
+    background: #D5FFD0;
+}
+
+.form-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-radio > input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.form-radio > div {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #D5FFD0;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.form-radio > input:checked + div {
+    background: #D5FFD0;
+}
