@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страховка</title>
     <link rel="stylesheet" href="./pages-style.css">
+    <script src="./insurance-script.js"></script>
 </head>
 <body>
     <div class="main-container">
         <h1>Форма заявки на страховой полис</h1>
         <div class="form">
-            <form>
+            <form class="form-data">
                 <label for="name">Фамилия имя отчество (при наличии):</label>
                 <input id="name" type="text" name="name" placeholder="Введите своё полное имя">
                 <label for="email">Адрес электронной почты:</label>
@@ -20,7 +21,7 @@
 
                 <label for="price">Выберите стоимость:</label>
                 <div class="form-radio">
-                    <input type="radio" id="price1" name="price" value="2800" />
+                    <input type="radio" checked id="price1" name="price" value="2800" />
                     <div></div>
                     <label for="contactChoice1">2800 рублей</label>
                 </div>
@@ -36,7 +37,7 @@
                     <label for="check">Даю согласие на обработку персональных данных</label>
                 </div>
 
-                <button>Отправить форму</button>
+                <button class="button">Отправить форму</button>
             </form>
         </div>
     </div>
