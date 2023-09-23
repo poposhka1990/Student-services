@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страховка</title>
+    <link rel="stylesheet" href="../styles/pages-style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Форма заявки на страховой полис</h1>
+        <div class="form-wrapper">
+            <form class="form">
+                <label for="name">Фамилия имя отчество (при наличии):</label>
+                <input id="name" type="text" name="name" placeholder="Введите своё полное имя">
+                <label for="email">Адрес электронной почты:</label>
+                <input id="email" type="email" name="email" placeholder="Введите свою электронную почту">
+                <label for="phone">Номер телефона +7</label>
+                <input id="phone" type="tel" name="tel" placeholder="Введите свой номер телефона">
+
+                <label for="price">Выберите стоимость:</label>
+                <div class="form-radio">
+                    <input type="radio" checked id="price1" name="price" value="2800" />
+                    <div></div>
+                    <label for="contactChoice1">2800 рублей</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="price2" name="price" value="4500" />
+                    <div></div>
+                    <label for="contactChoice2">4500 рублей</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <div class="form-checkbox__box"></div>
+                    <label for="check">Даю согласие на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="button">Отправить форму</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="./insurance.js"></script>
+</body>
+</html>
